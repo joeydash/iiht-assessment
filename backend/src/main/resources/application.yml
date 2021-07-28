@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://grow90.cireveku3lt9.ap-south-1.rds.amazonaws.com/auth
+    username: admin
+    password: joeydash
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+#logging.level.org.hibernate.SQL: DEBUG
+#logging.level.org.hibernate.type: TRACE
+jwt.secret: joeydash
+mail.verification.url.host: https://apisocgen.grow90.org/user/verifyMailId/
+mail.verification.server.url: https://grow90.org/mail/mailgun/send/temp
+
+server:
+  max-http-header-size=15360:

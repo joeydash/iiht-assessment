@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-md-4 offset-md-4 mt-5">
+    <div class="card">
+      <div class="card-body">
+        <form>
+          <div class="mb-3">
+            <label for="userName" class="form-label">User Name</label>
+            <input type="text" class="form-control" id="userName" name="userName" [(ngModel)]="user.userName">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" [(ngModel)]="user.emailId">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Mobile Number</label>
+            <input type="text" class="form-control" id="phone" name="phone" [(ngModel)]="user.mobileNumber">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" [(ngModel)]="user.password">
+          </div>
+          <div class="mb-3 form-check text-center mt-5">
+            <a [routerLink]="['/signin']" class="form-check-label">Already Have An Account</a>
+          </div>
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button" (click)="siginUpUser()">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
