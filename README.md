@@ -1,2 +1,2 @@
 # iiht-assessment :boom :boom
-got to https://socgen.grow90.org
+go to https://socgen.grow90.org
